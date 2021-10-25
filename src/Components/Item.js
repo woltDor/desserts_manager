@@ -18,8 +18,8 @@ const Item = ({ title, price, image, addNewDessert }) => {
 
   return (
     <Card
-      style={{ left: "15%", width: 250 }}
-      cover={<img alt="img" src={image} height="250" />}
+      style={{ left: "15%", width: "70%" }}
+      cover={<img alt="img" src={image} height="200px" />}
       actions={[
         <PlusOutlined key="increase" onClick={increaseAmount} />,
         amount,
