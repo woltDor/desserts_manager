@@ -8,7 +8,7 @@ const PieChart = () => {
 
   useEffect(() => {
     const StringDesserts = localStorage.getItem("desserts");
-    const allDesserts = JSON.parse(StringDesserts);
+    const allDesserts = JSON.parse(StringDesserts) || {};
     setLabels(Object.keys(allDesserts));
     setValues(Object.keys(allDesserts).map((key) => allDesserts[key]));
   }, []);
