@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/desserts_manager/static/css/main.7176885d.chunk.css",
-    "main.js": "/desserts_manager/static/js/main.4648068f.chunk.js",
-    "main.js.map": "/desserts_manager/static/js/main.4648068f.chunk.js.map",
+    "main.js": "/desserts_manager/static/js/main.f4b93150.chunk.js",
+    "main.js.map": "/desserts_manager/static/js/main.f4b93150.chunk.js.map",
     "runtime-main.js": "/desserts_manager/static/js/runtime-main.e84092eb.js",
     "runtime-main.js.map": "/desserts_manager/static/js/runtime-main.e84092eb.js.map",
     "static/css/2.a95be28f.chunk.css": "/desserts_manager/static/css/2.a95be28f.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.7d7f1a9b.chunk.js",
     "static/css/main.7176885d.chunk.css",
-    "static/js/main.4648068f.chunk.js"
+    "static/js/main.f4b93150.chunk.js"
   ]
 }
