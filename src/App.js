@@ -11,13 +11,13 @@ function App() {
         <NavBar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/desserts_manager">
               <CatalogItems />
             </Route>
-            <Route exact path="/cart">
+            <Route exact path="/desserts_manager/cart">
               <ListDesserts />
             </Route>
-            <Route exact path="/stats">
+            <Route exact path="/desserts_manager/stats">
               <PieChart />
             </Route>
           </Switch>

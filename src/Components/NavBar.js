@@ -11,15 +11,15 @@ const NavBar = () => {
     <>
       <Menu mode="horizontal">
         <Menu.Item key="order" icon={<AppstoreOutlined />}>
-          <Link to="/">Catalog Items</Link>
+          <Link to="/desserts_manager">Catalog Items</Link>
         </Menu.Item>
 
         <Menu.Item key="cart" icon={<ShoppingCartOutlined />}>
-          <Link to="/cart">Cart</Link>
+          <Link to="/desserts_manager/cart">Cart</Link>
         </Menu.Item>
 
         <Menu.Item key="stats" icon={<PieChartOutlined />}>
-          <Link to="/stats">Statistics</Link>
+          <Link to="/desserts_manager/stats">Statistics</Link>
         </Menu.Item>
       </Menu>
     </>
