@@ -6,7 +6,7 @@ const ListDesserts = () => {
     JSON.parse(localStorage.getItem("desserts")) || {};
 
   const [allDesserts, setAllDesserts] = useState(initialDesserts);
-  const [arr, setArr] = useState([]);
+  const [arrayOfDesserts, setArrayOfDesserts] = useState([]);
 
   const convertDessertsData = (data) =>
     Object.keys(data).map((dessert) => {
@@ -14,14 +14,14 @@ const ListDesserts = () => {
     });
 
   useEffect(() => {
-    setArr(convertDessertsData(allDesserts));
+    setArrayOfDesserts(convertDessertsData(allDesserts));
   }, [allDesserts]);
 
   const deleteRow = (row) => {
     delete allDesserts[row.name];
     localStorage.setItem("desserts", JSON.stringify(allDesserts));
     setAllDesserts(allDesserts);
-    setArr(convertDessertsData(allDesserts));
+    setArrayOfDesserts(convertDessertsData(allDesserts));
   };
 
   const columns = [
@@ -56,7 +56,7 @@ const ListDesserts = () => {
       <Table
         style={{ width: "50%", margin: "0 auto" }}
         columns={columns}
-        dataSource={arr}
+        dataSource={arrayOfDesserts}
         size="middle"
       />
     </>
